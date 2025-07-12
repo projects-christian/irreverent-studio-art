@@ -1,2 +1,0 @@
--- AlterTable
-ALTER TABLE "Product" ALTER COLUMN "createdAt" SET DATA TYPE TIMESTAMP(6);
