@@ -1,0 +1,37 @@
+.section-slider {
+    display: block;
+    z-index: 2;
+    position: relative;
+    height: 200px;
+    height: 10.41667vw;
+}
+
+.section-slider .slider-first-screen {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.section-slider .swiper-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-slider-item {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
