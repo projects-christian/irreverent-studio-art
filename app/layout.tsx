@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Cinzel, Lora, Roboto_Condensed, Kablammo, Cormorant, Montserrat } from "next/font/google";
+import { Lora, Roboto_Condensed, Kablammo, Cormorant, Montserrat } from "next/font/google";
 import "@/assets/styles/globals.css";
 import { APP_NAME, APP_DESCRIPTION, SERVER_URL } from '@/lib/constants'
 import { ThemeProvider } from 'next-themes'
 
-const inter = Inter({ subsets: ["latin"] })
-
-const cinzel = Cinzel({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], // Elige los pesos que vayas a usar
-  variable: '--font-cinzel', // Para usarlo en Tailwind
-});
 
 const lora = Lora({
   subsets: ['latin'],
