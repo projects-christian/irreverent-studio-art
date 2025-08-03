@@ -65,7 +65,6 @@ module.exports = {
 				}
 			},
 			fontFamily: {
-				cinzel: ['var(--font-cinzel)'],
 				lora: ['var(--font-lora)'],
 				robotoCondensed: ['var(--font-roboto-condensed)'],
 				kablammo: ['var(--font-kablammo)'],
