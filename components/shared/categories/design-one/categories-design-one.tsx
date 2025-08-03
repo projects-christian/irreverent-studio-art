@@ -5,6 +5,7 @@ import rawData from "../../../../data/design-one.json"
 import Image from "next/image";
 
 
+
 type Product = {
   id: number
   title: string
