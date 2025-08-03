@@ -9,8 +9,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { useState } from 'react';
+
 
 const Menu = () => {
+    const [open, setOpen] = useState(false);
+    
     return ( 
         <div className='flex justify-end gap-3'>
             <nav className='hidden md:flex w-full max-w-xs gap-1'>
@@ -27,11 +31,13 @@ const Menu = () => {
                 </Button>
             </nav>
             <nav className='md:hidden'>
-                <Sheet>
-                    <SheetTrigger className='align-middle'>
-                        <EllipsisVertical />
-                    </SheetTrigger>
-                    <SheetContent className="flex flex-col items-start p-6">
+                <Sheet open={open} onOpenChange={setOpen}>
+                    {!open && (
+                        <SheetTrigger className='align-middle'>
+                            <EllipsisVertical />
+                        </SheetTrigger>
+                    )}
+                    <SheetContent className="flex flex-col items-start p-6 pt-2 bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark">
                         <SheetTitle>Menu</SheetTitle>
                         <ModeToggle />
                         <Button asChild variant='ghost'>
@@ -41,7 +47,7 @@ const Menu = () => {
                         </Button>
                         <Button asChild >
                             <Link href='/sign-in'>
-                                <UserIcon /> Cart
+                                <UserIcon /> Sign in
                             </Link>
                         </Button>
                         <SheetDescription></SheetDescription>

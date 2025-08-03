@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const Quote = () => {
     return (
-        <div className="section-quote">
+        <div className="section-quote dark:text-text-dark">
             <div className="uk-container">
                 <div
                     className="section-quote__title"
                     data-uk-scrollspy="target: &gt; *; cls: uk-animation-slide-bottom-small; delay: 500"
                 >
-                    <h3>
+                    <h3 className="">
                         Beauty begins the moment you
                         <br /> decide to be yourself.
                     </h3>

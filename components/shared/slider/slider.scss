@@ -2,8 +2,15 @@
     display: block;
     z-index: 2;
     position: relative;
-    height: 200px;
-    height: 10.41667vw;
+    height: 22.41667vw;
+
+    @media (min-width: 768px) {
+        height: 14.41667vw;
+    }
+
+    @media (min-width: 1280px) {
+        height: 10.41667vw;
+    }
 }
 
 .section-slider .slider-first-screen {

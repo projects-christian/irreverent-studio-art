@@ -8,15 +8,15 @@ import "@/components/shared/slider/slider.scss";
 
 const Slider = () => {
     const images = [
-        "/images/slider-slide-1.jpg",
-        "/images/slider-slide-2.jpg",
-        "/images/slider-slide-3.jpg",
-        "/images/slider-slide-4.jpg",
-        "/images/slider-slide-1.jpg",
+        "/images/products/lamp-manikin.jpg",
+        "/images/products/table-mickey.jpg",
+        "/images/products/chair-black-dice.jpg",
+        "/images/products/table-black-balls.jpg",
+        "/images/products/cutler-deadpool.jpg",
     ];
 
     return (
-        <div className="section-slider">
+        <div className="section-slider mb-[70px]">
             <Swiper
                 className="slider-first-screen"
                 modules={[Autoplay]}
@@ -42,11 +42,11 @@ const Slider = () => {
                 observer={true}
                 observeParents={true}
             >
-                {images.map((_, i) => (
+                {images.map((item, i) => (
                     <SwiperSlide key={i}>
                         <div className="section-slider-item">
                             <Image
-                                src="/images/slider-slide-3.jpg"
+                                src={ item }
                                 alt={`Slide ${i}`}
                                 width={310}
                                 height={310}

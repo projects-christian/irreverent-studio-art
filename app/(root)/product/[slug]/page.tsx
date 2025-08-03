@@ -17,7 +17,7 @@ const ProductDetailsPage = async (props: {
 
     return ( 
         <>
-            <section>
+            <section className='w-[80%] mx-auto'>
                 <div className='grid grid-cols-1 md:grid-cols-5'>
                     {/* Images Column */}
                     <div className='col-span-2'>

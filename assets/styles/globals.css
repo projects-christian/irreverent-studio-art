@@ -89,17 +89,27 @@
 }
 
 @layer base {
-    body {
-        @apply bg-background text-foreground;
-    }
-}
-
-@layer base {
     * {
-        @apply border-border;
+        @apply border-border-light dark:border-border-dark font-robotoCondensed;
     }
     body {
-        @apply bg-background text-foreground;
+        @apply bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark;
+    }
+
+    h2 {
+        @apply font-montserrat font-bold not-italic tracking-[5px] text-[28px] md:text-[34px] lg:text-[50px] dark:text-text-dark mb-[15px];
+    }
+
+    h3, h4, h5 {
+        @apply font-robotoCondensed font-normal not-italic dark:text-text-dark;
+    }
+    
+    p {
+        @apply font-robotoCondensed font-normal not-italic dark:text-text-dark;
+    }
+
+    p {
+        @apply font-lora font-normal not-italic dark:text-text-dark;
     }
 }
 
@@ -115,7 +125,7 @@ html.dark .upload-field .text-white {
 /* ********** header *********** */
 header {
     display: block;
-    z-index: 4;
+    z-index: 99999;
     position: fixed;
     top: 0;
     left: 0;
@@ -129,7 +139,8 @@ header {
 }
 
 header.scrolled {
-    background-color: white;
-    color: black;
+    background-color: rgba(0, 0, 0, .439);
+    color: #acacac;
     border-bottom-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
 }

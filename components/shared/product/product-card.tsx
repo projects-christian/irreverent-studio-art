@@ -6,7 +6,7 @@ import { Product } from "@/types";
 
 const ProductCard = ({ product }: { product: Product }) => {
     return (
-        <Card className="w-full max-w-sm">
+        <Card className="w-full max-w-sm flex flex-col justify-around">
             <CardHeader className="p-0 items-center">
                 <Link href={`/product/${product.slug}`}>
                     <Image
@@ -20,9 +20,9 @@ const ProductCard = ({ product }: { product: Product }) => {
                 </Link>
             </CardHeader>
             <CardContent className="p-4 grid gap-4">
-                <div className="text-xs">{product.brand}</div>
+                <p className="font-lora text-xs mb-[8px]">{product.brand}</p>
                 <Link href={`/product/${product.slug}`}>
-                    <h2 className="text-sm font-medium">{product.name}</h2>
+                    <h3 className="font-robotoCondensed text-md font-medium mb-[15px]">{product.name}</h3>
                 </Link>
                 <div className="flex-between gap-4">
                     <p>{product.rating} Stars</p>
