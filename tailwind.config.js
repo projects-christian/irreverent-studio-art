@@ -51,7 +51,8 @@ module.exports = {
   			}
   		},
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans],
+		  	sans: ['Inter', ...fontFamily.sans],
+			cinzel: ['Cinzel', 'serif'],
       },
       borderRadius: {
   			lg: 'var(--radius)',
