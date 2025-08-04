@@ -17,6 +17,7 @@ const HeroVideo = () => {
         Tu navegador no soporta video HTML5.
       </video>
 
+        
       {/* Overlay content */}
       <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
         <div className="text-center text-white px-4 section-hero__content">
