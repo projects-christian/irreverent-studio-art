@@ -8,11 +8,11 @@ import "@/components/shared/slider/slider.scss";
 
 const Slider = () => {
     const images = [
-        "/images/products/lamp-manikin.jpg",
-        "/images/products/table-mickey.jpg",
-        "/images/products/chair-black-dice.jpg",
-        "/images/products/table-black-balls.jpg",
-        "/images/products/cutler-deadpool.jpg",
+        "/images/slider/lamp-manikin.jpg",
+        "/images/slider/table-mickey.jpg",
+        "/images/slider/chair-black-dice.jpg",
+        "/images/slider/table-black-balls.jpg",
+        "/images/slider/cutler-deadpool.jpg",
     ];
 
     return (

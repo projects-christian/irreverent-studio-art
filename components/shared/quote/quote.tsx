@@ -21,7 +21,7 @@ const Quote = () => {
                 >
                     <Image
                         className="section-quote__img section-quote__img--1"
-                        src="/images/img-quote-1.jpg"
+                        src="/images/products/lamp-manikin.jpg"
                         alt="img-quote"
                         width={350} // proporción base
                         height={380}
@@ -30,7 +30,7 @@ const Quote = () => {
                     />
                     <Image
                         className="section-quote__img section-quote__img--2"
-                        src="/images/img-quote-2.jpg"
+                        src="/images/products/table-white-hand.jpg"
                         alt="img-quote"
                         width={300} // proporción base
                         height={300}
@@ -39,7 +39,7 @@ const Quote = () => {
                     />
                     <Image
                         className="section-quote__img section-quote__img--3"
-                        src="/images/img-quote-3.jpg"
+                        src="/images/products/chair-black-dice.jpg"
                         alt="img-quote"
                         width={420} // proporción base
                         height={460}

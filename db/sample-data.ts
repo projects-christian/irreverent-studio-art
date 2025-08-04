@@ -22,8 +22,8 @@ const sampleData = {
       category: "Table",
       description: 'Minimalistic design for new spaces',
       images: [
-        '/images/products/table-mickey.jpg',
-        '/images/products/table-mickey.jpg',
+        '/images/products/table-white-hand.jpg',
+        '/images/products/table-white-hand.jpg',
       ],
       price: 59.99,
       brand: 'Irreverent',
@@ -34,8 +34,8 @@ const sampleData = {
       banner: 'banner-1.jpg',
     },
     {
-      name: 'Elegant figure',
-      slug: 'lamp-elegant-figure',
+      name: 'Elegant shape',
+      slug: 'lamp-elegant-shape',
       category: "Lamp",
       description: 'For innovation and new spaces',
       images: [
@@ -69,8 +69,8 @@ const sampleData = {
     },
     {
       name: 'Deadpool at home',
-      slug: 'cuttler-deadpool-at-home',
-      category: "Cuttler",
+      slug: 'cutler-deadpool-at-home',
+      category: "Cutler",
       description: 'Streamlined design with flexible stretch fabric',
       images: [
         '/images/products/cutler-deadpool.jpg',
