@@ -46,6 +46,7 @@ const Quote = () => {
                         // style={{ width: "100%", height: "auto" }}
                         priority={true}
                     />
+                    
                 </div>
             </div>
         </div>
