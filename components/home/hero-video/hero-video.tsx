@@ -1,5 +1,4 @@
 import "@/components/home/hero-video/hero-video.scss";
-import Image from "next/image";
 const HeroVideo = () => {
     return (
         <section className="relative w-full h-[90vh] overflow-hidden">

@@ -1,4 +1,3 @@
-import Hero from "@/components/home/hero/hero";
 import Slider from "@/components/shared/slider/slider";
 import ProductList from "@/components/shared/product/product-list";
 import { getLatestProducts } from "@/lib/actions/product.actions";
