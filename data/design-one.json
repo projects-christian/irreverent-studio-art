@@ -56,7 +56,7 @@
             "smallProducts": [
                 {
                     "id": 1,
-                    "title": "HasLivbe",
+                    "title": "Cuchilleros",
                     "slug": "/collection",
                     "author": {
                         "name": "Mark Jordan",
@@ -68,7 +68,7 @@
                 },
                 {
                     "id": 2,
-                    "title": "Ladicorn Mos",
+                    "title": "Mesas",
                     "slug": "/collection",
                     "author": {
                         "name": "Farik Shaikh",
@@ -80,7 +80,7 @@
                 },
                 {
                     "id": 3,
-                    "title": "Twinkle",
+                    "title": "Lamparas",
                     "slug": "/collection",
                     "author": {
                         "name": "John Doe",
@@ -92,7 +92,7 @@
                 },
                 {
                     "id": 4,
-                    "title": "Monster",
+                    "title": "Sillas",
                     "slug": "/collection",
                     "author": {
                         "name": "Olive Yew",
@@ -104,7 +104,7 @@
                 },
                 {
                     "id": 5,
-                    "title": "Labibas Had",
+                    "title": "Esculturas",
                     "slug": "/collection",
                     "author": {
                         "name": "Olive Yew",
@@ -116,7 +116,7 @@
                 },
                 {
                     "id": 6,
-                    "title": "OperaHub",
+                    "title": "Bolsos",
                     "slug": "/collection",
                     "author": {
                         "name": "Ray Sin",

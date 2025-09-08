@@ -28,27 +28,24 @@ type DesignJson = {
 const data = rawData as DesignJson;
 const heroSection = data.content.find(section => section.section === "hero-section")
 const smallProducts = heroSection?.smallProducts ?? []
-console.log(smallProducts);
+// console.log(smallProducts);
 
 
 
 const DesignOne = () => (
 
-    <div className="categories-design-one slider-style-3 pt--70 mb-[70px]">
-        <div className="w-[100%] lg:w-[90%] xl:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
-            <div>
-                <h2 className="">Categories</h2>
-            </div>
-            <div className="flex flex-row gap-6 items-stretch">
+    <section className="categories-design-one slider-style-3 pt--70 mb-8 mt-8">
+        <div className="w-[100%] mx-auto px-4">
+            <div className="flex flex-row gap-6 items-stretch  md:h-auto">
                 <div className="w-6/12 md:w-5/12">
-                    <div className="overflow-hidden relative h-full slider-thumbnail thumbnail-overlay">
+                    <div className="overflow-hidden relative h-[500px] min-h-full slider-thumbnail thumbnail-overlay">
                         <a rel="preload" href="/collection">
                             <Image
                                 className="w-full h-full object-cover rounded-lg"
-                                src="/images/design-one-banner-02.webp"
+                                src="/images/fortuny-lamp-1.jpg"
                                 alt="Nft_Profile"
                                 width={658} // proporción base
-                                height={615}
+                                height={400}
                                 style={{ color: "transparent" }}
                                 priority={true}
                             />
@@ -56,24 +53,24 @@ const DesignOne = () => (
                         </a>
                         <div className="absolute left-[14px] lg:left-[50px] bottom-[8px] lg:bottom-[50px] z-20 text-left">
                             <h5 className="text-[18px] md:text-[30px] text-[#ffffff] -mb-[10px]">
-                                <a className="block relative" rel="preload" href="/collection">Faminho24</a>
+                                <a className="block relative" rel="preload" href="/collection">Categories</a>
                             </h5>
-                            <span className="text-[10px] md:text-[14px] text-[#00a3ff] inline-block mt-5">Farik Shaikh</span>
+                            {/* <span className="text-[10px] md:text-[14px] text-[#00a3ff] inline-block mt-5">Farik Shaikh</span> */}
                         </div>
                     </div>
                 </div>
 
                 <div className="w-6/12 md:w-7/12">
                     {smallProducts && (
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 h-full">
                             {smallProducts.map((prod) => (
-                                <div key={prod.id || prod.slug} className="">
-                                    <div className="relative">
-                                        <div className="overflow-hidden rounded-[5px] thumbnail thumbnail-overlay">
+                                <div key={prod.id || prod.slug} className="flex h-full">
+                                    <div className="relative flex-1">
+                                        <div className="overflow-hidden rounded-[5px] thumbnail thumbnail-overlay h-full">
                                             <a rel="preload" href="/collection">
                                                 <Image
-                                                    className="lg:min-h-[270px] object-cover object-center"
-                                                    src="/images/design-one-banner-sm-05.webp"
+                                                    className="w-full h-full object-cover object-center"
+                                                    src="/images/fortuny-4.jpg"
                                                     alt="Nft_Profile"
                                                     width={1000}
                                                     height={1000}
@@ -85,7 +82,7 @@ const DesignOne = () => (
                                             <h5 className="text-[10px] md:text-[22px] leading-[1.24] font-bold mb-[0] lg:mb-[7px] text-white">
                                                 <a rel="preload" href={prod.slug}>{prod.title}</a>
                                             </h5>
-                                            <span className="text-[8px] md:text-[14px] text-[#00a3ff] inline-block mt-[5px] lg:mt-5">{prod.author.name}</span>
+                                            {/* <span className="text-[8px] md:text-[14px] text-[#00a3ff] inline-block mt-[5px] lg:mt-5">{prod.author.name}</span> */}
                                         </div>
                                     </div>
                                 </div>
@@ -95,6 +92,6 @@ const DesignOne = () => (
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 );
 export default DesignOne;

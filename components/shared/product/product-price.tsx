@@ -7,11 +7,14 @@ const ProductPrice = ({ value, className }: { value: number; className?: string 
     const [intValue, floatValue] = stringValue.split('.');
 
     return ( 
-        <p className={cn('text-2xl', className)}>
-            <span className='text-xs align-super'>$</span>
-            {intValue}
-            <span className='text-xs align-super'>.{floatValue}</span>
-        </p>
+        <>
+            <p className={cn('text-2xl', className)}>
+                <span className=''>$</span>
+                {intValue}
+                <span className=''>.{floatValue}</span>
+            </p>
+            <span>impuestos inc.</span>
+        </>
     );
 }
  

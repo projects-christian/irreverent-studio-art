@@ -132,6 +132,7 @@ header {
     width: 100%;
     border-bottom: 1px solid rgba(231, 215, 210, 0.2);
     color: #fff;
+    background-color: #151414;
     transition:
         background-color 0.4s ease,
         color 0.3s ease,
@@ -139,7 +140,7 @@ header {
 }
 
 header.scrolled {
-    background-color: rgba(0, 0, 0, .439);
+    background-color: #151414;
     color: #acacac;
     border-bottom-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);

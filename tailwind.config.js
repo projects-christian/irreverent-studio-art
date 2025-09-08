@@ -12,7 +12,8 @@ module.exports = {
 			colors: {
 				background: {
 					light: '#fffbf7',
-					dark: '#13131d',
+					dark: '#151414',
+					greenForest: '#184B44',
 				},
 				text: {
 					light: '#000000',
@@ -33,6 +34,10 @@ module.exports = {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
+				},
+				greenForest: {
+					DEFAULT: '#184B44',
+					light: '#257469'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
