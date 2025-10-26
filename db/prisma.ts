@@ -5,9 +5,10 @@ import type { Decimal } from '@prisma/client/runtime/library';
 import ws from 'ws';
 
 neonConfig.webSocketConstructor = ws;
+
 const connectionString = `${process.env.DATABASE_URL}`;
 const pool = new Pool({ connectionString });
-const adapter = new PrismaNeon(pool);
+const adapter = new PrismaNeon({ connectionString }); 
 
 export const prisma = new PrismaClient({ adapter }).$extends({
   result: {
