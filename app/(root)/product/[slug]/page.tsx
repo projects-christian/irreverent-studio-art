@@ -1,7 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { getProductBySlug } from '@/lib/actions/product.actions';
-import { convertToPlainObject } from "@/lib/utils"
 import { notFound } from 'next/navigation';
 import ProductPrice from '@/components/shared/product/product-price';
 import { Button } from '@/components/ui/button';
