@@ -29,7 +29,7 @@ export default function ProductDetailTabs() {
       </div>
 
       {/* Content */}
-      <div className="mt-6 text-gray-800 dark:text-gray-200">
+      <div className="my-6 text-gray-800 dark:text-gray-200">
         {activeTab === "Descripción" && (
           <div>
             <h3 className="text-xl font-semibold mb-2">Descripción del producto</h3>

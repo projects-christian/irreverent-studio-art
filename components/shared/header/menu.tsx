@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from '@/components/ui/button';
 import ModeToggle from './mode-toggle';
 import Link from 'next/link';
@@ -10,6 +12,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { useState } from 'react';
+import UserButton from './user-button';
 
 
 const Menu = () => {
@@ -50,6 +53,8 @@ const Menu = () => {
                                 <UserIcon /> Sign in
                             </Link>
                         </Button>
+                        {/* the UserButton component sometimes creates errors */}
+                        {/* <UserButton /> */}
                         <SheetDescription></SheetDescription>
                     </SheetContent>
                 </Sheet>

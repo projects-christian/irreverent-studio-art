@@ -6,7 +6,9 @@ import { notFound } from 'next/navigation';
 import ProductPrice from '@/components/shared/product/product-price';
 import { Button } from '@/components/ui/button';
 import ProductImages from '@/components/shared/product/product-images';
-import ProductDetailTabs from '@/components/shared/product/Product-detail-tabs';
+import ProductDetailTabs from '@/components/shared/product/product-detail-tabs';
+import RelatedProducts from '@/components/shared/product/related-products/related-products'
+import SimilarOption from '@/components/shared/product/similar-options/similar-options';
 
 const ProductDetailsPage = async (props: {
         params: Promise<{ slug: string }>;
@@ -102,8 +104,14 @@ const ProductDetailsPage = async (props: {
                         )}
                     </div>
                 </div>
-                <div>
+                <div className='mb-24'>
                     <ProductDetailTabs />
+                </div>
+                <div className='mb-24'>
+                   <RelatedProducts />
+                </div>
+                <div className='mb-24'>
+                    <SimilarOption />
                 </div>
             </section>
         </>

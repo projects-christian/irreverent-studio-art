@@ -10,13 +10,18 @@ import SliderTwo from "@/components/shared/slider-two/slider-two";
 import BannerDesignOne from "@/components/shared/banners/banner-design-one/banner-design-one";
 
 const Homepage = async () => {
-    const latestProducts = await getLatestProducts();
+    const latestProductsRaw = await getLatestProducts();
+    const latestProducts = latestProductsRaw.map(product => ({
+        ...product,
+        price: product.price.toString(),
+        rating: product.rating.toString(),
+    }));
 
     return (
         <>
             <HeroVideo />
             <TopShopFeature />
-            {/* <ProductList data={latestProducts} title="Newest arrivals" /> */}
+            <ProductList data={latestProducts} title="Newest arrivals" />
             <SliderTwo data={latestProducts} />
             <DesignOne />
             <ProductsDesignTwo />

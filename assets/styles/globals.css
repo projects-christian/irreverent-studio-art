@@ -97,7 +97,7 @@
     }
 
     h2 {
-        @apply font-montserrat font-bold not-italic tracking-[5px] text-[28px] md:text-[34px] lg:text-[50px] dark:text-text-dark mb-[15px];
+        @apply font-robotoCondensed text-2xl font-normal not-italic dark:text-text-dark;
     }
 
     h3, h4, h5 {
