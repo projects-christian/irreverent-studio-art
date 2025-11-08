@@ -125,7 +125,7 @@ html.dark .upload-field .text-white {
 /* ********** header *********** */
 header {
     display: block;
-    z-index: 99999;
+    z-index: 6;
     position: fixed;
     top: 0;
     left: 0;

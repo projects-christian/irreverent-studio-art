@@ -22,7 +22,7 @@ const CategoryDrawerTest = async () => {
                     <MenuIcon />
                 </Button>
             </DrawerTrigger>
-            <DrawerContent className='h-full max-w-sm z-9'>
+            <DrawerContent className='drawer-content h-full max-w-sm pt-12  z-[99] bg-black'>
                 <DrawerHeader>
                     <DrawerTitle>Select a category</DrawerTitle>
                     <div className='space-y-1 mt-4'>
