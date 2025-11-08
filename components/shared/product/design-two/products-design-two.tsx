@@ -1,5 +1,5 @@
 import "./products-design-two.scss";
-import _data from "@/data/design-one.json";
+// import data from "@/data/design-one.json";
 import Image from "next/image";
 
 

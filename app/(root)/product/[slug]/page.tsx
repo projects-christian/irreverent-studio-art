@@ -18,7 +18,7 @@ const ProductDetailsPage = async (props: {
     const product = await getProductBySlug(slug);
     if (!product) notFound();
 
-    let card = false
+    const card = false
 
     return ( 
         <>
