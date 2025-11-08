@@ -1,5 +1,5 @@
 import "./similar-options.scss";
-import data from "@/data/design-one.json";
+import _data from "@/data/design-one.json";
 import Image from "next/image";
 import Link from "next/link";
 

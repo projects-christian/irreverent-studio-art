@@ -49,8 +49,8 @@ export default function ProductDetailTabs() {
         {activeTab === "Valoraciones" && (
           <div>
             <h3 className="text-xl font-semibold mb-2">Valoraciones</h3>
-            <p>⭐⭐⭐⭐☆ - "Muy buena calidad, lo recomiendo!"</p>
-            <p>⭐⭐⭐⭐⭐ - "Excelente producto, llegó rápido."</p>
+            <p>⭐⭐⭐⭐☆ - &quot;Muy buena calidad, lo recomiendo!&quot;</p>
+            <p>⭐⭐⭐⭐⭐ - &quot;Excelente producto, llegó rápido.&quot;</p>
           </div>
         )}
       </div>

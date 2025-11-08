@@ -4,7 +4,7 @@ import Link from "next/link";
 import { APP_NAME } from "@/lib/constants";
 import Menu from "./menu";
 import { useEffect, useState } from "react";
-import CategoryDrawer from '@/components/shared/header/category-drawer'
+import _CategoryDrawer from '@/components/shared/header/category-drawer'
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
 

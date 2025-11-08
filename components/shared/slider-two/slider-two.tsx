@@ -13,18 +13,18 @@ const SliderTwo = ({ data, limit }: {
     data: Product[];
     limit?: number;
 }) => {
-    const images = [
-        // "/images/slider/lamp-manikin.jpg",
-        // "/images/slider/table-mickey.jpg",
-        // "/images/slider/chair-black-dice.jpg",
-        // "/images/slider/table-black-balls.jpg",
-        // "/images/slider/cutler-deadpool.jpg",
-        "/images/products/fortuny-1.jpg",
-        "/images/products/fortuny-1.jpg",
-        "/images/products/fortuny-1.jpg",
-        "/images/products/fortuny-1.jpg",
-        "/images/products/fortuny-1.jpg",
-    ];
+    // const images = [
+    //     // "/images/slider/lamp-manikin.jpg",
+    //     // "/images/slider/table-mickey.jpg",
+    //     // "/images/slider/chair-black-dice.jpg",
+    //     // "/images/slider/table-black-balls.jpg",
+    //     // "/images/slider/cutler-deadpool.jpg",
+    //     "/images/products/fortuny-1.jpg",
+    //     "/images/products/fortuny-1.jpg",
+    //     "/images/products/fortuny-1.jpg",
+    //     "/images/products/fortuny-1.jpg",
+    //     "/images/products/fortuny-1.jpg",
+    // ];
 
     useEffect(() => {
         setTimeout(() => {
