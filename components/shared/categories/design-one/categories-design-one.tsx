@@ -2,36 +2,7 @@ import "./categories-design-one.scss";
 import { getAllCategories } from "@/lib/actions/product.actions";
 // import { FeatureProductsType } from "@utils/types";
 // import data from "@data/design-one.json"
-import rawData from "../../../../data/design-one.json"
 import Image from "next/image";
-
-
-
-type Product = {
-  id: number
-  title: string
-  slug: string
-  author: { name: string; slug: string }
-  image: { src: string }
-}
-
-type Section = {
-  section: string
-  smallProducts?: Product[]
-  largeProducts?: Product[]
-}
-
-type DesignJson = {
-  title: string
-  content: Section[]
-}
-
-const data = rawData as DesignJson;
-const heroSection = data.content.find(section => section.section === "hero-section")
-const smallProducts = heroSection?.smallProducts ?? []
-// console.log(smallProducts);
-
-
 
 const CategoriesDesignOne = async () => {
     const categories = await getAllCategories();

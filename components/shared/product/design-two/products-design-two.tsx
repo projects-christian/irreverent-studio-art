@@ -6,36 +6,36 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const products = [
-  {
-    id: 1,
-    image: "/images/fortuny-7.jpg",
-    category: "Sculpture",
-    name: "Marble Head",
-    price: "$120",
-  },
-  {
-    id: 2,
-    image: "/images/fortuny-7.jpg",
-    category: "Painting",
-    name: "Abstract Flow",
-    price: "$250",
-  },
-  {
-    id: 3,
-    image: "/images/fortuny-7.jpg",
-    category: "Furniture",
-    name: "Mosaic Table",
-    price: "$430",
-  },
-  {
-    id: 4,
-    image: "/images/fortuny-7.jpg",
-    category: "Decor",
-    name: "Crystal Skull",
-    price: "$90",
-  },
-];
+// const products = [
+//   {
+//     id: 1,
+//     image: "/images/fortuny-7.jpg",
+//     category: "Sculpture",
+//     name: "Marble Head",
+//     price: "$120",
+//   },
+//   {
+//     id: 2,
+//     image: "/images/fortuny-7.jpg",
+//     category: "Painting",
+//     name: "Abstract Flow",
+//     price: "$250",
+//   },
+//   {
+//     id: 3,
+//     image: "/images/fortuny-7.jpg",
+//     category: "Furniture",
+//     name: "Mosaic Table",
+//     price: "$430",
+//   },
+//   {
+//     id: 4,
+//     image: "/images/fortuny-7.jpg",
+//     category: "Decor",
+//     name: "Crystal Skull",
+//     price: "$90",
+//   },
+// ];
 
 
 
