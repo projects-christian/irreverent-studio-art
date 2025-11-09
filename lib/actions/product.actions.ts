@@ -33,12 +33,26 @@ export async function getAllCategories() {
   return data;
 }
 
+//products by category
 export async function getProductsByCategory(category: string) {
   const data = await prisma.product.findMany({
     where: {
       category: {
         equals: category,
         mode: 'insensitive', // 👈 Esto hace la comparación sin importar mayúsculas
+      },
+    },
+  });
+
+  return JSON.parse(JSON.stringify(data));
+}
+
+//get featured products for home page
+export async function getFeaturedProducts() {
+  const data = await prisma.product.findMany({
+    where: {
+      isFeatured: {
+        equals: true, // 👈 Esto hace la comparación sin importar mayúsculas
       },
     },
   });
