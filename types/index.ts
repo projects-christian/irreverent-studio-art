@@ -6,7 +6,7 @@ export type Product = z.infer<typeof insertProductSchema> & {
   name?: string;
   slug?: string;
   category?: string;
-  images?: string;
+  images?: string[];
   brand?: string;
   description?: string;
   stock?: number;
